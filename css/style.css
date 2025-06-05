@@ -1,0 +1,87 @@
+@charset "utf-8";
+
+.wrapper {
+  min-height: 100vh;
+  position: relative; /*相対位置*/
+  padding-top: 80px;
+  padding-bottom: 120px; /*footerの高さ*/
+  box-sizing: border-box;
+  background-color: #dfd9de;
+}
+
+header {
+  width: 100%;
+  background-color: #00adb5;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute; /*絶対位置*/
+  top: 0; /*下に固定*/
+}
+
+#main {
+  width: 100%;
+}
+
+footer {
+  width: 100%;
+  background-color: #00adb5;
+  color: #fff;
+  padding: 30px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute; /*絶対位置*/
+  bottom: 0; /*下に固定*/
+}
+
+#logo {
+  padding-left: 10px;
+  width: 225px;
+}
+
+#logout {
+  padding-right: 20px;
+  width: -webkit-fill-available;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#main h1 {
+  margin-left: 50px;
+}
+
+#menu {
+  padding-right: 50px;
+  width: -webkit-fill-available;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.btn-square {
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: #668ad8; /*ボタン色*/
+  color: #fff;
+  border-bottom: solid 4px #627295;
+  border-radius: 3px;
+}
+
+.btn-square:active {
+  /*ボタンを押したとき*/
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px); /*下に動く*/
+  border-bottom: none; /*線を消す*/
+}
+
+.err {
+  color: red;
+}
+
+.visible {
+  visibility: hidden;
+}
